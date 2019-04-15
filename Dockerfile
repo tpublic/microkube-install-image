@@ -3,7 +3,6 @@ FROM docker.bluelight.limited:5000/bluelightltd/microkube-clone-image
 # ENV RUBY_VER=2.5.3
 ENV RUBY_VER=2.6.0
 
-
 WORKDIR /home/app/microkube/
 
 # # # 
