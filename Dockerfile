@@ -13,6 +13,9 @@ RUN echo "Setting default ruby ver" && \
         export PATH="/usr/local/rvm/rubies/ruby-$RUBY_VER/bin:$PATH" && \
         rvm use --default $RUBY_VER && \
         echo "Calling bundle" && \
-        bundle install 
+        bundle install && \
+        chown -R app.app /home/app/
+
+
 
 #CMD ["/bin/bash", "-c", "top"]
