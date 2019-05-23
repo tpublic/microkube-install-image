@@ -14,7 +14,7 @@ RUN echo "Setting default ruby ver" && \
         rvm use --default $RUBY_VER && \
         echo "Calling bundle" && \
         bundle install && \
-        chown -R app.app /home/app/
+        chown -R app.app /home/
 
 
 
